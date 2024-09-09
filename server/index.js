@@ -44,7 +44,7 @@ app.use(passport.session());
 passport.use(new GoogleStrategy({
     clientID: config.CLIENT_ID,
     clientSecret: config.CLIENT_SECRET,
-    callbackURL: 'http://localhost:3001/auth/google/callback'
+    callbackURL: 'https://thecarshop.onrender.com/auth/google/callback'
   },
   (accessToken, refreshToken, profile, done) => {
      console.log(profile);
