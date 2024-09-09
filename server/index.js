@@ -86,7 +86,7 @@ app.get('/auth/google',
 app.get('/auth/google/callback',  passport.authenticate('google', { failureRedirect: 'http://localhost:3000/' }),
   (req, res) => {
     // Successful authentication
-    res.redirect('https://thecarshop.onrender.com');
+    res.redirect('https://thecarshop-frontend.onrender.com');
   }
 );
 
