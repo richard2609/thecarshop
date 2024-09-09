@@ -1,0 +1,13 @@
+
+.gotohome-button {
+    background-color: rgb(193, 48, 43);
+    color: white;
+    font-weight: 400;
+}
+
+.confirm-order {
+    background-color: rgb(0, 0, 0);
+    font-size: 50px;
+    color: white;
+    font-weight: 400;
+}

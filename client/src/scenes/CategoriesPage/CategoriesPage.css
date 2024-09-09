@@ -1,0 +1,49 @@
+
+.card-bg-container-sport {
+    background-image: url("https://www.wsupercars.com/wallpapers-wide/BMW/2024-BMW-M3-CS-001-1440w.jpg");
+    background-size:cover;
+    padding: 10%;
+}
+
+.card-bg-container-sport .card-container .link-text{
+    font-size: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+.card-bg-container-luxury {
+    background-image: url("https://www.wsupercars.com/wallpapers-wide/Rolls-Royce/2021-Rolls-Royce-Boat-Tail-005-1440w.jpg");
+    background-size:cover;
+    padding: 10%;
+}
+
+.card-bg-container-luxury .card-container .link-text{
+    font-size: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+.card-bg-container-vintage {
+    background-image: url("https://www.wsupercars.com/wallpapers-wide/Ford/1968-Ford-Mustang-GT-Bullitt-001-1440w.jpg");
+    background-size:cover;
+    padding: 10%;
+}
+
+.card-bg-container-vintage .card-container .link-text{
+    font-size: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+.card-bg-container-hypercars {
+    background-image: url("https://www.wsupercars.com/wallpapers-wide/Lamborghini/2024-Lamborghini-Revuelto-Opera-Unica-006-1440w.jpg");
+    background-size:cover;
+    padding: 10%;
+}
+
+.card-bg-container-hypercars .card-container .link-text{
+    font-size: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,15 @@
+.car-info h4 {
+    font-size: 50px;
+    font-weight: 590;
+    color: black;
+}
+
+.car-info p {
+    font-size: 30px;
+    font-weight: 570;
+}
+
+.car-info .btn {
+    background-color: rgb(216, 46, 46) !important;
+    border: none;
+}

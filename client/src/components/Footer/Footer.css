@@ -1,0 +1,54 @@
+/* .s1-main {
+    font-size: 20px;
+    font-weight: 550;
+    color: black;
+}
+.s1-sub {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(63, 63, 63);
+}
+
+.s2-main {
+    font-size: 20px;
+    font-weight: 550;
+    color: black;
+}
+
+.s2-sub {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(63, 63, 63);
+}
+
+.s3-main {
+    font-size: 20px;
+    font-weight: 550;
+    color: #000;
+}
+
+.s3-sub {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(146, 50, 50);
+}
+.s4-main {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(146, 50, 50);
+} */
+
+
+@media (min-width: 768px) {
+    .custom-fw-s1-main {
+        font-weight: 600;
+        /* This applies the bold style on md screens and up */
+    }
+}
+
+@media (max-width: 992px) {
+    .s1-sub,.s2-sub, .s3-sub, .s4-sub {
+        font-size: 13px;
+        font-weight: 400;
+    }
+}

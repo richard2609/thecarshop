@@ -1,0 +1,32 @@
+.about-us-container {
+    background-color: rgba(255, 255, 255, 0.711);
+}
+
+.about-us p {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(197, 67, 67);
+}
+
+.about-us span {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(71, 71, 71);
+}
+
+@media (max-width: 1200px) {
+    .about-us p {
+        font-size: 30px;
+        font-weight: 600;
+        color: rgb(197, 67, 67);
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .about-us span {
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(71, 71, 71);
+    }
+}

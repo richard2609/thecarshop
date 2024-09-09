@@ -1,0 +1,29 @@
+.navtext a{
+    font-weight: 500;
+}
+.navtext2 a{
+    font-weight: 500;
+}
+.nav-brand{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.brand-large {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+@media (min-width: 992px) {
+    .brand-small {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .brand-large {
+        display: none;
+    }
+}
