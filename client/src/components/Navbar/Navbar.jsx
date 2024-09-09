@@ -10,11 +10,11 @@ const Navbar = ({updateCart , cart, setCart}) => {
     })
 
 async function callLogin() {
-    window.location.href = 'http://localhost:3001/login';
+    window.location.href = 'https://thecarshop.onrender.com/login';
 }
 
 async function callLogout() {
-    window.location.href = 'http://localhost:3001/logout';
+    window.location.href = 'https://thecarshop.onrender.com/logout';
 }
 
 

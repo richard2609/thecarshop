@@ -12,7 +12,7 @@ const ShopPage = ( {updateCart, cart, setCart} ) => {
     useEffect(() => {
         try {
             async function httpgetProductsData() {
-                const reponse = await fetch("http://localhost:3001/shop");
+                const reponse = await fetch("https://thecarshop.onrender.com/shop");
                 const data = await reponse.json();
                 setproducts(data);
                 console.log("cart inside shoppage", cart)
@@ -33,7 +33,7 @@ const ShopPage = ( {updateCart, cart, setCart} ) => {
     const addToCart = async (productfull) =>{
 
         try {
-            const response = await fetch('http://localhost:3001/cart/add', {
+            const response = await fetch('https://thecarshop.onrender.com/cart/add', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json'

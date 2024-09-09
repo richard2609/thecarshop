@@ -9,7 +9,7 @@ const Vintage = ({updateCart, setCart, cart}) => {
     useEffect(() => {
         try {
             async function httpgetProductsData() {
-                const reponse = await fetch("http://localhost:3001/categories/vintage");
+                const reponse = await fetch("https://thecarshop.onrender.com/categories/vintage");
                 const data = await reponse.json();
                 setproducts(data);
             }
@@ -28,7 +28,7 @@ const Vintage = ({updateCart, setCart, cart}) => {
     const addToCart = async (productfull) =>{
 
         try {
-            const response = await fetch('http://localhost:3001/cart/add', {
+            const response = await fetch('https://thecarshop.onrender.com/cart/add', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json'

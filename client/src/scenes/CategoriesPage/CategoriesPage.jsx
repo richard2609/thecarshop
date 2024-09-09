@@ -11,7 +11,7 @@ const CategoriesPage = ({cart, updateCart, setCart}) => {
     useEffect(() => {
         try {
             async function httpgetCategoriesData() {
-                const reponse = await fetch("http://localhost:3001/categories");
+                const reponse = await fetch("https://thecarshop.onrender.com/categories");
                 const data = await reponse.json();
                 console.log(data);
                 setcategories(data);

@@ -34,7 +34,7 @@ const CartBody = ({ updateCart, cart, setCart }) => {
 
   const removeFromCart = async (product) => {
     try {
-      await fetch('http://localhost:3001/cart/remove', {
+      await fetch('https://thecarshop.onrender.com/cart/remove', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -55,7 +55,7 @@ const CartBody = ({ updateCart, cart, setCart }) => {
 
   const increaseQuantity = async (product) => {
     try {
-      const response = await fetch('http://localhost:3001/cart/add', {
+      const response = await fetch('https://thecarshop.onrender.com/cart/add', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -78,7 +78,7 @@ const CartBody = ({ updateCart, cart, setCart }) => {
 
   const decreaseQuantity = async (product) => {
     try {
-      const response = await fetch('http://localhost:3001/cart/decrease', {
+      const response = await fetch('https://thecarshop.onrender.com/cart/decrease', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

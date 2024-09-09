@@ -9,7 +9,7 @@ const Luxury = ({updateCart, cart, setCart}) => {
     useEffect(() => {
         try {
             async function httpgetProductsData() {
-                const reponse = await fetch("http://localhost:3001/categories/luxury");
+                const reponse = await fetch("https://thecarshop.onrender.com/categories/luxury");
                 const data = await reponse.json();
                 setproducts(data);
             }
@@ -29,7 +29,7 @@ const Luxury = ({updateCart, cart, setCart}) => {
     const addToCart = async (productfull) =>{
 
         try {
-            const response = await fetch('http://localhost:3001/cart/add', {
+            const response = await fetch('https://thecarshop.onrender.com/cart/add', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json'
