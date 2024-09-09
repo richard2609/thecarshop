@@ -86,7 +86,7 @@ app.get('/auth/google',
 app.get('/auth/google/callback',  passport.authenticate('google', { failureRedirect: 'http://localhost:3000/' }),
   (req, res) => {
     // Successful authentication
-    res.redirect('http://localhost:3000/');
+    res.redirect('https://thecarshop.onrender.com');
   }
 );
 
@@ -112,7 +112,7 @@ app.get('/logout', (req, res) => {
     req.session.destroy(() => {
       // Redirect to the homepage or login after logging out
       console.log("logged out")
-      res.redirect('http://localhost:3000/');
+      res.redirect('https://thecarshop.onrender.com');
     });
   });
 });
