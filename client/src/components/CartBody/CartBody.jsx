@@ -1,5 +1,4 @@
-import React, { useState, useEffect} from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect} from 'react';
 import './CartBody.css';
 
 const CartBody = ({ updateCart, cart, setCart }) => {
@@ -14,27 +13,11 @@ const CartBody = ({ updateCart, cart, setCart }) => {
 
   }, [])
 
-  // const fetcCartData = async () =>{
-  //     try {
-  //         async function httpgetCartData() {
-  //             const reponse = await fetch("http://localhost:3001/username/getcart", {
-  //                 credentials: 'include',
-  //             });
-  //             const data = await reponse.json();
-  //             setCart(data);
-  //         }
-  //         httpgetCartData();
-
-  //     }
-  //     catch (err) {
-  //         console.log(err);
-  //     }
-  // }
 
 
   const removeFromCart = async (product) => {
     try {
-      await fetch('https://thecarshop.onrender.com/cart/remove', {
+      await fetch('http://localhost:6001/cart/remove', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -55,7 +38,7 @@ const CartBody = ({ updateCart, cart, setCart }) => {
 
   const increaseQuantity = async (product) => {
     try {
-      const response = await fetch('https://thecarshop.onrender.com/cart/add', {
+      const response = await fetch('http://localhost:6001/cart/add', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -65,7 +48,7 @@ const CartBody = ({ updateCart, cart, setCart }) => {
       });
       const updatedCart = await response.json();
       setCart(updatedCart);
-      updateCart(); // Optionally update cart in parent component
+      updateCart(); 
     } catch (error) {
       console.error('Error increasing item quantity:', error);
     }
@@ -78,7 +61,7 @@ const CartBody = ({ updateCart, cart, setCart }) => {
 
   const decreaseQuantity = async (product) => {
     try {
-      const response = await fetch('https://thecarshop.onrender.com/cart/decrease', {
+      const response = await fetch('http://localhost:6001/cart/decrease', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -88,7 +71,7 @@ const CartBody = ({ updateCart, cart, setCart }) => {
       });
       const updatedCart = await response.json();
       setCart(updatedCart);
-      updateCart(); // Optionally update cart in parent component
+      updateCart(); 
     } catch (error) {
       console.error('Error decreasing item quantity:', error);
     }

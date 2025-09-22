@@ -22,7 +22,7 @@ const App = () => {
   const fetcCartData = async () =>{
       try {
           async function httpgetCartData() {
-              const reponse = await fetch("https://thecarshop.onrender.com/username/getcart", {
+              const reponse = await fetch("http://localhost:6001/username/getcart", {
                   credentials: 'include',
               });
               const data = await reponse.json();

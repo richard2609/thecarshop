@@ -10,30 +10,17 @@ const Navbar = ({updateCart , cart, setCart}) => {
     })
 
 async function callLogin() {
-    window.location.href = 'https://thecarshop.onrender.com/login';
+    window.location.href = 'http://localhost:6001/login';
 }
 
 async function callLogout() {
-    window.location.href = 'https://thecarshop.onrender.com/logout';
+    window.location.href = 'http://localhost:6001/logout';
 }
 
 
 
     return (
         <div class="container-fluid nav-main-container">
-            {/* <nav class="navbar navbar-expand-lg bg-slate-300 border-bottom">
-                <div class="navbar-nav navtext">
-                    <a class="nav-link">Home</a>
-                    <a class="nav-link">Shop</a>
-                    <a class="nav-link">Categories</a>
-                </div>
-                <span class="nav-brand mx-auto">THE CAR SHOP</span>
-                <div class="navbar-nav navtext2">
-                    <a class="nav-link">Search</a>
-                    <a class="nav-link"><i class="bi bi-person-fill text-black"></i></a>
-                    <a class="nav-link"><i class="bi bi-cart-fill text-black"></i></a>
-                </div>
-            </nav> */}
             <nav class="navbar navbar-expand-md navbar-light border-bottom">
 
                 <div class="container-fluid">
@@ -67,9 +54,6 @@ async function callLogout() {
                             <button class="btn text-start px-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                                 <i class="bi bi-cart-fill text-black"></i>
                             </button>
-
-                            {/* 
-                            <button class="nav=link btn text-start"><i class="bi bi-person-fill text-black"></i></button> */}
                         </div>
                     </div>
                 </div>

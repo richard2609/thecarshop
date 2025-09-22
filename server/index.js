@@ -44,7 +44,7 @@ app.use(passport.session());
 passport.use(new GoogleStrategy({
     clientID: config.CLIENT_ID,
     clientSecret: config.CLIENT_SECRET,
-    callbackURL: 'https://thecarshop.onrender.com/auth/google/callback'
+    callbackURL: 'http://localhost:6001/auth/google/callback'
   },
   (accessToken, refreshToken, profile, done) => {
      console.log(profile);
@@ -83,10 +83,10 @@ app.get('/auth/google',
   passport.authenticate('google', { scope: ['profile', 'email'] })
 );
 
-app.get('/auth/google/callback',  passport.authenticate('google', { failureRedirect: 'http://localhost:3000/' }),
+app.get('/auth/google/callback',  passport.authenticate('google', { failureRedirect: 'http://localhost:3000'}),
   (req, res) => {
     // Successful authentication
-    res.redirect('https://thecarshop-frontend.onrender.com');
+    res.redirect('http://localhost:3000');
   }
 );
 
@@ -112,7 +112,7 @@ app.get('/logout', (req, res) => {
     req.session.destroy(() => {
       // Redirect to the homepage or login after logging out
       console.log("logged out")
-      res.redirect('https://thecarshop.onrender.com');
+      res.redirect('http://localhost:3000');
     });
   });
 });

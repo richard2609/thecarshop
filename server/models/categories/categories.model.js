@@ -1,26 +1,6 @@
 
 const mongoose = require('mongoose');
 
-// const categories = [
-//     {
-//         id:0,
-//         title:"Sport"
-//     },
-//     {
-//         id:1,
-//         title:"Luxury"
-//     },
-//     {
-//         id:2,
-//         title:"Vintage"
-//     },
-//     {
-//         id:3,
-//         title:"Hypercars"
-//     }
-// ]
-
-
 const categorySchema = new mongoose.Schema({
             id:{type: Number},
             title:{type: String}
